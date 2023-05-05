@@ -22,11 +22,19 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AggregateRoots\ClinicAggregateRoot\AppointmentAggregateRoot\DomainDto\" />
-    <Folder Include="AggregateRoots\ClinicAggregateRoot\AppointmentAggregateRoot\Event\" />
-    <Folder Include="AggregateRoots\ClinicAggregateRoot\AppointmentAggregateRoot\ValueObjects\" />
-    <Folder Include="AggregateRoots\ClinicAggregateRoot\AppointmentAggregateRoot\QuestDtos\" />
-    <Folder Include="AggregateRoots\ClinicAggregateRoot\UserAggregateRoot\" />
+    <Folder Include="AggregateRoots\AppointmentAggregateRoot\DomainDto\" />
+    <Folder Include="AggregateRoots\AppointmentAggregateRoot\Event\" />
+    <Folder Include="AggregateRoots\AppointmentAggregateRoot\ValueObjects\" />
+    <Folder Include="AggregateRoots\AppointmentAggregateRoot\QuestDtos\" />
+    <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\DomainDto\" />
+    <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\Entities\" />
+    <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\Event\" />
+    <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\QuestDtos\" />
+    <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\ValueObjects\" />
+    <Folder Include="AggregateRoots\ClinicAggregateRoot\" />
+    <Folder Include="AggregateRoots\UserAggregateRoot\DomainDto\" />
+    <Folder Include="AggregateRoots\UserAggregateRoot\Event\" />
+    <Folder Include="AggregateRoots\UserAggregateRoot\QuestDtos\" />
     <Folder Include="Common\ConstStrings\" />
     <Folder Include="Common\EventSourcing\DomainServices\" />
   </ItemGroup>

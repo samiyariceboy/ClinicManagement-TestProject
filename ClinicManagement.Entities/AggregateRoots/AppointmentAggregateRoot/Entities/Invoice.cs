@@ -1,6 +1,6 @@
 ﻿using ClinicManagement.Entities.Common;
 
-namespace ClinicManagement.Entities.AggregateRoots.ClinicAggregateRoot.AppointmentAggregateRoot.Entities
+namespace ClinicManagement.Entities.AggregateRoots.AppointmentAggregateRoot.Entities
 {
     public class Invoice : BaseEntity
     {

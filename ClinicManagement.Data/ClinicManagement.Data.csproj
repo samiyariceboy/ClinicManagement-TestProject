@@ -20,9 +20,9 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configs\" />
     <Folder Include="Constant\" />
-    <Folder Include="DbContexts\" />
+    <Folder Include="DbContexts\NewSql\" />
+    <Folder Include="DbContexts\NoSql\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
 
