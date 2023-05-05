@@ -30,6 +30,9 @@ public class UserAggregateRoot : IdentityUserAggregateRoot
     #region Relation
     #region ICollaction
     public virtual ICollection<UserRole> UserRoles { get; private set; }
+
+    public virtual ICollection<AppointmentAggregateRoot. AppointmentAggregateRoot> 
+         Appointments { get; init; }
     #endregion
     #endregion
 

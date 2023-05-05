@@ -10,7 +10,7 @@
 
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.7">
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
@@ -24,6 +24,12 @@
   <ItemGroup>
     <Folder Include="Controllers\v2\" />
     <Folder Include="Controllers\v1\" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Update="ClinicManagement.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -11,6 +11,10 @@ namespace ClinicManagement.Data.Configs.AppointmentAggregateRootConfigs
             builder.HasOne(o => o.Invoice)
                 .WithOne(o => o.Appointment)
                 .HasForeignKey<AppointmentAggregateRoot>(f => f.InvoiceId);
+
+            builder.HasOne(o => o.PatientUser)
+                .WithMany(m => m.Appointments)
+                .HasForeignKey(f => f.PatientUserId);
         }
     }
 }

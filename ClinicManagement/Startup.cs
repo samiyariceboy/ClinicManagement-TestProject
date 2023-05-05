@@ -1,7 +1,6 @@
 using ClinicManagement.Services.Common.Pagination;
 using ClinicManagement.WebFramework.Configuration;
 using ClinicManagement.WebFramework.Middlewares;
-using ClinicManagement.Common.Settings;
 using ClinicManagement.WebFramework.Swagger;
 
 namespace Mc2.CrudTest.Presentation.Server
@@ -38,9 +37,7 @@ namespace Mc2.CrudTest.Presentation.Server
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
                 endpoints.MapControllers();
-                endpoints.MapFallbackToFile("index.html");
             });
         }
     }

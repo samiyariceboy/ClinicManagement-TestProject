@@ -13,17 +13,13 @@ namespace ClinicManagement.Data.Configs.IdentityConfig
             builder.Property(f => f.UserName)
                 .IsRequired().IsUnicode();
 
-            //builder.OwnsOne(f => f.UserInfo);
             builder.OwnsOne(f => f.StatusInfo);
-            //builder.OwnsOne(f => f.ConfirmInfo);
-            //builder.OwnsOne(f => f.SafeAndTimeInfo);
 
             builder.HasMany(f => f.UserRoles)
                 .WithOne(b => b.User);
 
-
-            /* builder.HasMany(f => f.SessionManagers)
-                 .WithOne(b => b.User);*/
+            builder.HasMany(m => m.Appointments)
+                .WithOne(o => o.PatientUser);
         }
     }
 }

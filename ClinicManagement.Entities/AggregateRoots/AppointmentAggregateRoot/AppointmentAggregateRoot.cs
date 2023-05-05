@@ -13,13 +13,18 @@ public class AppointmentAggregateRoot : AggregateRoot
     /// <summary>
     /// کاربر با نقش بیمار
     /// </summary>
-    public Guid UserId { get; private set; }
+    public Guid PatientUserId { get; private set; }
+    /// <summary>
+    /// صورت حساب مورد نظر
+    /// </summary>
     public Guid InvoiceId { get; private set; }
     #endregion
 
     #region Relations
     #region ForeignKey
     public virtual Invoice Invoice { get; private set; }
+
+    public virtual UserAggregateRoot.UserAggregateRoot PatientUser { get; init; }
     #endregion
 
     #region ICollections
