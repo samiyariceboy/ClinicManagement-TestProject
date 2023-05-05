@@ -1,21 +1,30 @@
-var builder = WebApplication.CreateBuilder(args);
+using Autofac.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Microsoft.Extensions.Hosting;
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+namespace Mc2.CrudTest.Presentation.Server
 {
-    app.UseExceptionHandler("/Error");
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureKestrel((options) =>
+                    {
+                        options.ListenLocalhost(5000, options =>
+                        {
+                            options.Protocols = HttpProtocols.Http1AndHttp2;
+                        });
+                        options.ConfigureEndpointDefaults(lo => lo.Protocols = HttpProtocols.Http1AndHttp2);
+                    });
+                });
+    }
 }
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapRazorPages();
-
-app.Run();

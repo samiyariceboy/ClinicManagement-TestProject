@@ -10,4 +10,16 @@
     <ProjectReference Include="..\ClinicManagement.Data\ClinicManagement.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataInitializer\" />
+    <Folder Include="DTO\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Services\BackGroundServices\" />
+    <Folder Include="Services\CallBackService\" />
+    <Folder Include="Services\DomainServices\" />
+    <Folder Include="Services\LocalServices\" />
+    <Folder Include="Services\ProcessingServices\" />
+    <Folder Include="Services\OpenApiServices\" />
+  </ItemGroup>
+
 </Project>
