@@ -4,6 +4,20 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  
+	  
   </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ExcelDataReader" Version="3.7.0-develop00310" />
+		<PackageReference Include="libphonenumber-csharp" Version="8.13.10" />
+		<PackageReference Include="Mapster" Version="7.3.0" />
+		<PackageReference Include="HtmlSanitizer" Version="7.1.542" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="2.2.0" />
+		<PackageReference Include="PersianTools.Core" Version="2.0.3" />
+		<PackageReference Include="Pluralize.NET" Version="1.0.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+	</ItemGroup>
 
 </Project>

@@ -10,4 +10,20 @@
     <ProjectReference Include="..\ClinicManagement.Entities\ClinicManagement.Entities.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.7" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Configs\" />
+    <Folder Include="Constant\" />
+    <Folder Include="DbContexts\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>
