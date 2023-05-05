@@ -1,7 +1,5 @@
 using Autofac.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
-using Microsoft.Extensions.Hosting;
 
 namespace Mc2.CrudTest.Presentation.Server
 {
@@ -14,6 +12,7 @@ namespace Mc2.CrudTest.Presentation.Server
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .UseServiceProviderFactory(new AutofacServiceProviderFactory())
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

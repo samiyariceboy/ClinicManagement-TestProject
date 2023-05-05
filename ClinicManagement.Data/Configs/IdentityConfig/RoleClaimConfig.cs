@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ClinicManagement.Entities.Identity;
+using ClinicManagement.Entities.AggregateRoots.UserAggregateRoot.Entities;
 
 namespace ClinicManagement.Data.Configs.IdentityConfig
 {

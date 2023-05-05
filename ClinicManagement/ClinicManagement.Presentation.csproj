@@ -4,6 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>ClinicManagement.xml</DocumentationFile>
   </PropertyGroup>
 
 
@@ -17,6 +19,11 @@
 	
   <ItemGroup>
     <ProjectReference Include="..\ClinicManagement.WebFramework\ClinicManagement.WebFramework.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Folder Include="Controllers\v2\" />
+    <Folder Include="Controllers\v1\" />
   </ItemGroup>
 
 </Project>

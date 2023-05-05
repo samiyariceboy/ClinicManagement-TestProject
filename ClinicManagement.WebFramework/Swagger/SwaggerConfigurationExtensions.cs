@@ -40,14 +40,14 @@ namespace ClinicManagement.WebFramework.Swagger
 
             services.AddSwaggerGen(option =>
             {
-                var XmlDocumentPath = Path.Combine(AppContext.BaseDirectory, "RayankarCrudTest.xml");
+                var XmlDocumentPath = Path.Combine(AppContext.BaseDirectory, "ClinicManagement.xml");
                 // Xml Documentation
                 option.IncludeXmlComments(XmlDocumentPath, true);
                 option.DescribeAllParametersInCamelCase();
 
 
 
-                option.SwaggerDoc("v1", new OpenApiInfo { Version = "v1", Title = "RayankarCrudTest API V1", Description = "RayankarCrudTest v1", Contact = new OpenApiContact() { Email = "samiyariceboy@gmail.com", Name = "samiyar" } });
+                option.SwaggerDoc("v1", new OpenApiInfo { Version = "v1", Title = "ClinicManagement API V1", Description = "ClinicManagement v1", Contact = new OpenApiContact() { Email = "samiyariceboy@gmail.com", Name = "samiyar" } });
 
                 #region 1). Set Swagger Versioning with Reflection
                 //Remove Version parameter...
@@ -105,8 +105,8 @@ namespace ClinicManagement.WebFramework.Swagger
             {
                 option.DocExpansion(DocExpansion.None);
 
-                option.SwaggerEndpoint("/swagger/v1/swagger.json", "RayankarCrudTest-v1");
-                option.SwaggerEndpoint("/swagger/v2/swagger.json", "RayankarCrudTest-v2");
+                option.SwaggerEndpoint("/swagger/v1/swagger.json", "ClinicManagement-v1");
+                option.SwaggerEndpoint("/swagger/v2/swagger.json", "ClinicManagement-v2");
             });
 
             app.UseReDoc(options =>
