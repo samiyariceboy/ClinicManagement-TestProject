@@ -1,4 +1,5 @@
 ﻿using ClinicManagement.Common.Utilities;
+using ClinicManagement.Entities.AggregateRoots.InsuranceCompanyAggregateRoot.Entities;
 using ClinicManagement.Entities.AggregateRoots.UserAggregateRoot.Entities;
 using ClinicManagement.Entities.AggregateRoots.UserAggregateRoot.ValueObjects;
 using ClinicManagement.Entities.Common;
@@ -33,6 +34,8 @@ public class UserAggregateRoot : IdentityUserAggregateRoot
 
     public virtual ICollection<AppointmentAggregateRoot. AppointmentAggregateRoot> 
          Appointments { get; init; }
+    public virtual ICollection<InsuredPatientUsers> InsuredPatientUsers { get; private set; }
+
     #endregion
     #endregion
 

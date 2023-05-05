@@ -1,6 +1,9 @@
 ﻿using ClinicManagement.Entities.Common;
 namespace ClinicManagement.Entities.AggregateRoots.AppointmentAggregateRoot.Entities
 {
+    /// <summary>
+    /// اقساط پرداختی که توسط بیمار و یا شرکت بیمه پرداخت میشود
+    /// </summary>
     public class PaymentInstallments : BaseEntity
     {
         #region Ctors
@@ -8,7 +11,13 @@ namespace ClinicManagement.Entities.AggregateRoots.AppointmentAggregateRoot.Enti
         #endregion
 
         #region Propeties
+        /// <summary>
+        /// صورت حساب
+        /// </summary>
         public Guid InvoiceId { get; private set; }
+        /// <summary>
+        /// شرکت بیمه پرداخت کننده
+        /// </summary>
         public Guid? InsuranceCompanyId { get; private set; }
         #endregion
 

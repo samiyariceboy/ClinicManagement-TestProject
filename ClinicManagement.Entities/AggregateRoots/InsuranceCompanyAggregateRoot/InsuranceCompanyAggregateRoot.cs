@@ -1,5 +1,6 @@
 ﻿using ClinicManagement.Entities.Common;
 using ClinicManagement.Entities.AggregateRoots.AppointmentAggregateRoot.Entities;
+using ClinicManagement.Entities.AggregateRoots.InsuranceCompanyAggregateRoot.Entities;
 
 namespace ClinicManagement.Entities.AggregateRoots.InsuranceCompanyAggregateRoot;
 
@@ -19,7 +20,8 @@ public class InsuranceCompanyAggregateRoot : AggregateRoot
 
     #endregion
     #region ICollections
-    public virtual ICollection<PaymentInstallments> PaymentInstallments { get; init; }
+    public virtual ICollection<PaymentInstallments> PaymentInstallments { get; private set; }
+    public virtual ICollection<InsuredPatientUsers> InsuredPatientUsers { get; private set; }
     #endregion
     #endregion
 

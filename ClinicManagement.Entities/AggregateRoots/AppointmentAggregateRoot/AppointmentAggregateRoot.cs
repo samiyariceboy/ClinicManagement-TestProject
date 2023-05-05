@@ -3,6 +3,9 @@ using ClinicManagement.Entities.AggregateRoots.AppointmentAggregateRoot.Entities
 
 namespace ClinicManagement.Entities.AggregateRoots.AppointmentAggregateRoot;
 
+/// <summary>
+/// قراره ملاقات
+/// </summary>
 public class AppointmentAggregateRoot : AggregateRoot
 {
     #region Ctors
@@ -23,8 +26,7 @@ public class AppointmentAggregateRoot : AggregateRoot
     #region Relations
     #region ForeignKey
     public virtual Invoice Invoice { get; private set; }
-
-    public virtual UserAggregateRoot.UserAggregateRoot PatientUser { get; init; }
+    public virtual UserAggregateRoot.UserAggregateRoot PatientUser { get; private set; }
     #endregion
 
     #region ICollections

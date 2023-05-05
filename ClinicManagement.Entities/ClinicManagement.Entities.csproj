@@ -31,7 +31,6 @@
     <Folder Include="AggregateRoots\ClinicAggregateRoot\Event\" />
     <Folder Include="AggregateRoots\ClinicAggregateRoot\QuestDtos\" />
     <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\DomainDto\" />
-    <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\Entities\" />
     <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\Event\" />
     <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\QuestDtos\" />
     <Folder Include="AggregateRoots\InsuranceCompanyAggregateRoot\ValueObjects\" />

@@ -3,6 +3,9 @@ using ClinicManagement.Entities.Common;
 
 namespace ClinicManagement.Entities.AggregateRoots.ClinicAggregateRoot
 {
+    /// <summary>
+    /// کلینیک درمان
+    /// </summary>
     public class ClinicAggregateRoot : AggregateRoot
     {
         public ClinicAggregateRoot(string clinicName, Address clinicAddress,
@@ -17,8 +20,14 @@ namespace ClinicManagement.Entities.AggregateRoots.ClinicAggregateRoot
         #endregion
 
         #region Propeties
+        /// <summary>
+        /// نام کلینیک
+        /// </summary>
         public string ClinicName { get; private set; }
         public DateTime DateOfEstablishment { get; private set; }
+        /// <summary>
+        /// آدرس کلینیک
+        /// </summary>
         public Address ClinicAddress { get; private set; }
         public DateTime DateTimeEstablishment { get; }
         #endregion

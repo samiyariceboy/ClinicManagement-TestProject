@@ -20,6 +20,9 @@ namespace ClinicManagement.Data.Configs.IdentityConfig
 
             builder.HasMany(m => m.Appointments)
                 .WithOne(o => o.PatientUser);
+
+            builder.HasMany(m => m.InsuredPatientUsers)
+               .WithOne(m => m.PatientUser);
         }
     }
 }
